@@ -1,0 +1,35 @@
+.features-section {
+    background-color: #F9FAFB;
+    /* border: 1px solid red; */
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 1rem 7rem .5rem 7rem;
+    border-radius: var(--dimensions-spacing-lg, 1rem);
+    
+}
+
+.feature-image {
+    margin: 0rem 7rem 0rem 7rem;
+    /* border: 1px solid purple; */
+    display: flex;
+    justify-content: center;
+}
+
+.feature-image :nth-child(1){
+    height: 33.75rem;
+}       
+
+.badge {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.badge :nth-child(1){
+    position: relative;
+    height: 3.5625rem;
+}  
+
+.badge :nth-child(2){
+    position: relative;
+    height: 5.25rem;
+}  
