@@ -1,0 +1,129 @@
+.flash-animation {
+    animation: flash 0.5s linear;
+}
+
+@keyframes flash {
+    0%, 100% {
+        color: inherit; /* Use the default text color */
+        transform: scale(1); /* No scaling at start and end */
+    }
+    50% {
+        color: #2D6FD2; /* Flashing color */
+        transform: scale(1.1); /* Slight bump animation */
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; 
+    padding: 10px 20px;
+    margin: .5rem 7rem .5rem 7rem;
+
+    /* border: 1px solid blue; */
+}
+
+.navbar-left a {
+    display: flex;
+    padding: var(--padding-0);
+    align-items: center;
+    gap: 0.5rem;
+    padding-right: 1rem;
+    text-decoration: none;
+
+    cursor: pointer;   
+}
+
+.navbar-left a:hover .rumbo-wordmark {
+    /* color: #2D6FD2; */
+    text-decoration: none;
+}
+
+/* Style the logo */
+.navbar-left img {
+    height: 2rem;
+    border-radius: .375rem ;
+}
+
+.rumbo-wordmark {
+    color: #1D2430;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: 1.5rem; /* 150% */
+    letter-spacing: -0.005rem;
+    text-transform: uppercase;
+}
+
+/* Style the navigation links */
+.navbar-middle ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    padding: var(--padding-0);
+    align-items: center;
+    gap: 2rem;
+    /* border: 1px solid red; */
+}
+
+.navbar-middle li {
+    margin-right: 20px; /* Adjust the spacing between links */
+}
+
+.navbar-middle a {
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem; /* 150% */
+    color: #667085;
+}
+
+.navbar-middle a :hover{
+    /* text-decoration: none; */
+    color: #2D6FD2;
+}
+
+.navbar-right {
+    width: 340px;
+    display: flex;
+    justify-content: right;
+    padding: var(--padding-0);
+    align-items: center;
+    gap: .75rem;
+    /* padding-right: 1rem; */
+
+    cursor: pointer;   
+
+    /* border: 1px solid red; */
+}
+
+.navbar-right span {
+    color: #667085;
+    cursor: pointer;
+    text-decoration: none; 
+
+    color: var(--gray-500, #667085);
+    /* Text md/Semibold */
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem; /* 150% */
+
+    transition: color 0.3s, text-decoration 0.3s; 
+}
+
+.navbar-right .navbar-span :nth-child(2){
+    color: #2D6FD2;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-decoration-line: underline;
+}

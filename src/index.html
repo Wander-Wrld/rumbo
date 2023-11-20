@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumbo</title>
+    <link rel="icon" href="images/rumbo-logo.webp" type="image/webp">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+
+    <script defer src="scripts/progress-bar.js"></script>
+    <script defer src="scripts/faqs.js"></script>
+    <script defer src="scripts/card.js"></script>
+    <script defer src="scripts/navigation.js"></script>
+  </head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="index.html"> 
+        <img src="images/rumbo-logo.webp" alt="Rumbo Logo">
+        <span class="rumbo-wordmark">Rumbo</span>
+      </a>
+    </div>
+    <div class="navbar-middle">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#faq">Faq’s</a></li>
+        </ul>
+    </div>
+
+    <div class="navbar-right">
+      <div class="navbar-span">
+        <span id="userCount" class="flash-animation">50K</span>
+        <span> Users in Pretoria</span>
+      </div>
+        <button class="download-button">
+          Download
+        </button>
+    </div>
+</nav>
+
+      <!-- Progress Bar -->
+      <div class="progress-container">
+        <div class="progress-bar" id="myProgressBar"></div>
+    </div>
+
+    <div class="hero-section hidden" id="home">
+        <div class="hero-image">
+                <img src="images/hero.png" alt="Hero image">
+        </div>
+
+        <div class="hero-content-container">
+            <div class="hero-content">
+                <div class="badge-group">
+                    <span class="new-in-town">New in town</span>
+                    <span class="iOS-android">Get it on iOS and Android <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+                <div class="hero-copy">
+                    <h1>Taxis just became for <br>everyone</h1>
+                    <p>Rumbo transforms taxis into an effortless choice for all. Our easy e-hailing app ensures a smooth ride, making your journey hassle-free.</p>
+                </div>
+            </div>
+
+            <div class="hero-button">
+                <button class="learn-more-button">
+                    <i class="fa-regular fa-circle-play"></i> Learn more 
+                </button>
+                <button class="download-button">
+                    Download Rumbo now
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section hidden">
+        <div class="map">
+            <img src="images/map.png" alt="Map">
+        </div>
+
+        <div class="map-content">
+            <div class="content-span-h2">
+                <span>Your location</span>
+                <h2>Always know home many taxis are close</h2>
+            </div>
+            <p>Never wonder when taxis are around your location</p>
+        </div>
+    </div>
+
+    <div class="section hidden">
+      <div class="content">
+          <div class="content-span-h2">
+            <span id="testimonials">Testimonials</span>
+              <h2>What our user's are saying!</h2>
+          </div>
+          <!-- <p>Everything you need to know about Rumbo.</p> -->
+      </div>
+    </div>
+
+    <div class="testimonials">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1564485377539-4af72d1f6a2f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="Card image cap">
+            <div class="card-body">
+              <div class="cart-title-text">
+              <h5 class="card-title">Olivia Rhye</h5>
+              <p class="card-text">Rumbo's drivers are always on time, making my daily commute stress-free!</p>
+              </div>
+              <a href="#" class="testimonials-primary">View Olivia's trip<i class="fa-solid fa-taxi"></i></a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="Card image cap">
+            <div class="card-body">
+              <div class="cart-title-text">
+              <h5 class="card-title">Phoenix Baker</h5>
+              <p class="card-text">Fast and reliable service. Rumbo is my go-to for getting around Pretoria.</p>
+              </div>
+              <a href="#" class="testimonials-primary">View Phoenix's trip<i class="fa-solid fa-taxi"></i></a>
+            </div>
+          </div>
+          
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1560787313-5dff3307e257?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="Card image cap">
+            <div class="card-body">
+              <div class="cart-title-text">
+              <h5 class="card-title">Lana Steiner</h5>
+              <p class="card-text">I love how easy it is to book a ride with Rumbo. Great app!</p>
+              </div>
+              <a href="#" class="testimonials-primary">View Lana's trip<i class="fa-solid fa-taxi"></i></a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="Card image cap">
+            <div class="card-body">
+              <div class="cart-title-text">
+              <h5 class="card-title">Demi Wilkinson</h5>
+              <p class="card-text">Friendly drivers and clean cars. Rumbo is the best choice for taxi service.</p>
+              </div>
+              <a href="#" class="testimonials-primary">View Demi's trip<i class="fa-solid fa-taxi"></i></a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1616166358812-784a766b5762?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="Card image cap">
+            <div class="card-body">
+              <div class="cart-title-text">
+              <h5 class="card-title">Candice Wu</h5>
+              <p class="card-text">Riding with Rumbo is so convenient. Their app is user-friendly, and the drivers are professional.</p>
+              </div>
+              <a href="#" class="testimonials-primary">View Candice's trip<i class="fa-solid fa-taxi"></i></a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="Card image cap">
+            <div class="card-body">
+              <div class="cart-title-text">
+              <h5 class="card-title">Natali Craig</h5>
+              <p class="card-text">I've never had a bad experience with Rumbo. Excellent service!</p>
+              </div>
+              <a href="#" class="testimonials-primary">View Natali's trip<i class="fa-solid fa-taxi"></i></a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1583123810408-23e7b5d1af9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="Card image cap">
+            <div class="card-body">
+              <div class="cart-title-text">
+              <h5 class="card-title">Drew Cano</h5>
+              <p class="card-text">Rumbo saved me during rush hour traffic. I highly recommend it!</p>
+              </div>
+              <a href="#" class="testimonials-primary">View Drew's trip<i class="fa-solid fa-taxi"></i></a>
+            </div>
+          </div>
+          
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="https://images.unsplash.com/photo-1512372923090-7b14fb496d44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80" alt="Card image cap">
+            <div class="card-body">
+              <div class="cart-title-text">
+              <h5 class="card-title">Orlando Diggs</h5>
+              <p class="card-text">Affordable fares and top-notch service. Rumbo is a game-changer for transportation in Pretoria.</p>
+              </div>
+              <a href="#" class="testimonials-primary">View Orlando's trip<i class="fa-solid fa-taxi"></i></a>
+            </div>
+          </div>
+    </div>
+
+    <div class="features-section" id="features">
+    <div class="section">
+        <div class="content">
+            <div class="content-span-h2">
+                <span>Feature</span>
+                <h2>Never worry about pickups, we have you covered</h2>
+            </div>
+            <p>We'll show you where to wait to board a taxi</p>
+        </div>
+    </div>
+    <div class="feature-image">
+      <img src="images/hero.png" alt="Features image">
+      <!-- <div class="badges">
+          <img src="images/apple-app-store.png" alt="Download in Apple app store">
+          <img src="images/google-play-badge.png" alt="Download in Google Play store">
+      </div> -->
+  </div>
+</div>
+
+    <div class="faq-section hidden" id="faq">
+        <div class="section">
+            <div class="content">
+                <div class="content-span-h2">
+                  
+                    <h2>Frequently asked questions</h2>
+                </div>
+                <p>Everything you need to know about Rumbo.</p>
+            </div>
+          </div>
+
+
+        <div class="faq-container">
+          <div class="faq-item">
+              <div class="faq-question">
+                How do I request a ride on Rumbo?
+                  <i class="bi bi-plus-circle"></i>
+              </div>
+              <div class="faq-answer">
+                Open the app, enter your destination, and select a vehicle option. Confirm your pickup location and request the ride. You'll be matched with a nearby driver.
+              </div>
+          </div>
+          <div class="faq-item">
+              <div class="faq-question">
+                Are the drivers on Rumbo licensed and vetted?
+                  <i class="bi bi-plus-circle"></i>
+              </div>
+              <div class="faq-answer">
+                Yes, all Rumbo drivers are licensed and undergo a thorough vetting process, including background checks, to ensure your safety and security.
+              </div>
+          </div>
+          <div class="faq-item">
+              <div class="faq-question">
+                Can I request a specific driver on Rumbo?
+                  <i class="bi bi-plus-circle"></i>
+              </div>
+              <div class="faq-answer">
+                No, you cannot request a specific driver on Rumbo. Rumbo's driver allocation system assigns available drivers to rides based on their proximity and availability.
+              </div>
+          </div>
+          <div class="faq-item">
+              <div class="faq-question">
+                Is there a maximum number of passengers allowed in a single ride?
+                  <i class="bi bi-plus-circle"></i>
+              </div>
+              <div class="faq-answer">
+                Yes, there is typically a maximum number of passengers allowed in a single ride with Rumbo. The maximum number of passengers may vary depending on the type of vehicle you choose when booking a ride.
+              </div>
+          </div>
+          <div class="faq-item">
+              <div class="faq-question">
+                What should I do if I feel unsafe during a ride?
+                  <i class="bi bi-plus-circle"></i>
+              </div>
+              <div class="faq-answer">
+                If you feel unsafe during a Rumbo ride:
+                <br><br>
+                <strong>Contact the Driver:</strong> Talk to the driver about your concerns if you can
+                <br><br>
+                <strong>Use the Emergency Button:</strong> Use the app's emergency feature to notify Rumbo
+                <br><br>
+                <strong>Share Location:</strong> Share your location with someone you trust
+                <br><br>
+                <strong>Call Emergency Services:</strong> If in immediate danger, call local emergency services (e.g. 10111)
+                <br><br>
+                <strong>Exit Safely:</strong> If necessary, exit the vehicle in a safe location
+                <br><br>
+                <strong>Report to Rumbo:</strong> Contact Rumbo support through the app or website to report the issue
+              </div>
+          </div>
+          <div class="faq-item">
+              <div class="faq-question">
+                Are driver ratings visible to passengers?
+                  <i class="bi bi-plus-circle"></i>
+              </div>
+              <div class="faq-answer">
+                Yes, driver ratings are visible to passengers using Rumbo. When you request a ride, you can see the driver's name, profile picture, and their average rating based on feedback from previous passengers.
+              </div>
+          </div>
+      </div>
+    </div>    
+
+    <div class="get-in-touch hidden">
+      <div class="get-in-touch-images">
+        <img src="images/avatar-1.png" alt="Avatar 1">
+        <img src="images/avatar-2.png" alt="Avatar 2">
+        <img src="images/avatar-3.png" alt="Avatar 3">
+      </div>
+      <div class="get-in-touch-item">
+        <div class="get-in-touch-question">
+          Still have questions?
+        </div>
+        <div class="get-in-touch-answer">
+          Can’t find the answer you’re looking for? Please chat to our friendly team.
+        </div>
+      </div>
+      <button class="download-button">
+          Get in touch
+      </button>
+    </div>
+
+    <div class="footer">
+      <div class="top">
+        <div class="download-rumbo">
+          <a href="#home"><img src="images/rumbo-logo.webp" alt="Rumbo logo"></a>
+            <button class="tertiary-button">
+              Download
+            </button>
+        </div>
+        
+        <div class="footer-links">
+          <div class="social">
+            <span>Social</span>
+            <ul>
+              <li><a href="#twitter">Twitter</a></li>
+              <li><a href="#linkedIn">LinkedIn</a></li>
+              <li><a href="#facebook">Facebook</a></li>
+          </ul>
+          </div>
+          <div class="legal">
+            <span>Legal</span>
+            <ul>
+              <li><a href="#terms">Terms</a></li>
+              <li><a href="#privacy">Privacy</a></li>
+              <li><a href="#cookies">Cookies</a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom">
+        <div class="copyright">© 2023 Rumbo. All rights reserved.</div>
+        <div class="badges-lang">
+          <div class="badges">
+            <img src="images/apple-app-store.png" alt="Download in Apple app store">
+            <img src="images/google-play-badge.png" alt="Download in Google Play store">
+          </div>
+          <button class="tertiary-button">
+            English <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

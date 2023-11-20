@@ -1,0 +1,114 @@
+@import url(progress-bar.css);
+@import url(buttons.css);
+@import url(navigation-bar.css);
+@import url(hero-section.css);
+@import url(map-section.css);
+@import url(testimonials.css);
+@import url(feature-section.css);
+@import url(iframe.css);
+@import url(faqs.css);
+@import url(get-in-touch.css);
+@import url(footer.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@1000&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: #2D6FD2;
+    --font-size: 1rem;
+    --gray-500: #667085;
+    --padding-0: 0rem;
+    --margin-body: .5rem 7rem .5rem 7rem;
+
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none; 
+    transition: color 0.3s, text-decoration 0.3s; 
+}
+
+a:hover {
+    color: #101828; 
+    text-decoration: underline; 
+}
+
+
+button {
+    cursor: pointer;   
+}
+
+h1 {
+    margin: 0;
+    color: #101828;
+    /* Display xl/Semibold */
+    font-family: Inter;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 4.5rem; /* 120% */
+    letter-spacing: -0.075rem;
+}
+
+p {
+    margin: 0;
+    color: var(--gray-500, #667085);
+    /* Text xl/Regular */
+    font-family: Inter;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.875rem; 
+}
+
+span {
+    color: #2D6FD2;
+}
+
+/* Section styles */
+.section {
+    position: relative;
+    margin: 2rem 7rem 2rem 7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* border: 1px solid red; */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid pink; */
+    
+    /* gap: 1rem; */
+}
+
+.content-span-h2 {
+    display: flex;
+    padding: var(--number, 0rem);
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    align-self: stretch;
+
+    /* border: 1px solid blue; */
+}
+
+.feature-image img{
+    height: 33.75rem;
+} 
+
+
